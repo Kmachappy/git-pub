@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 3001;
 const drinks = require("./models/drinks.js");
 
 app.get("/", (req, res) => {
-  res.render("index.ejs", { allFruits: fruits });
+    res.send('Welcome to the Gitpub App!')
 });
 
 app.get("/fruits/", (req, res) => {
