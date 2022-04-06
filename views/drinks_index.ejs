@@ -16,7 +16,8 @@
     <% for(let drink in allDrinks) { %>
          <li>
              <!-- https://flexiple.com/javascript-capitalize-first-letter/ -->
-             <%=allDrinks[drink].name.charAt(0).toUpperCase() + allDrinks[drink].name.slice(1) %>
+             <a href="/drinks/<%=drink%>"><%=allDrinks[drink].name.charAt(0).toUpperCase() + allDrinks[drink].name.slice(1) %></a>
+             
          </li>
     <% } %>
 </body>
