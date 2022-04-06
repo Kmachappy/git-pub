@@ -12,5 +12,12 @@
 </head>
 <body>
     <h1>Welcome to gitPub</h1>
+
+    <% for(let drink in allDrinks) { %>
+         <li>
+             <!-- https://flexiple.com/javascript-capitalize-first-letter/ -->
+             <%=allDrinks[drink].name.charAt(0).toUpperCase() + allDrinks[drink].name.slice(1) %>
+         </li>
+    <% } %>
 </body>
 </html>
