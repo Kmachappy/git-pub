@@ -10,7 +10,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/drinks/", (req, res) => {
-    res.send(drink)
+    // res.send(drinks)
+    res.render("drinks_index.ejs", { allDrinks: drinks });
 });
 
 app.get("/fruits/:id", (req, res) => {
